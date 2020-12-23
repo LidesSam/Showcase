@@ -1,0 +1,23 @@
+
+
+:root{
+    --Oxford-Blue:#0C264E;	
+    --Indigo-Rainbow: #15396A;
+    --Dark_Vanilla:#D8BBAA;
+    --Turkish_Rose:#B1787B;
+    --ROSE_DUST:#A4606C;
+    --Rajah:#F4B26A;
+}
+
+.Iconbar{
+    background-color:var(--Oxford-Blue);
+    color: var(--Rajah);
+
+}
+
+.Iconbar a{
+    background-color:var(--Oxford-Blue);
+    color: var(--Rajah);
+
+}
+    

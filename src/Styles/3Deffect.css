@@ -1,0 +1,43 @@
+.cube{
+
+}
+
+
+
+.card{
+    min-width: 100px;
+    min-height: 100px;
+    background-color: black;
+
+    cursor: crosshair;
+    display: flex;
+   flex-direction: row;
+    
+}
+
+.front{
+    max-width: 100%;
+    color: cyan;
+    background-color: tomato;
+ 
+}
+
+.back{
+    max-width: 100%;
+    color: blue;
+    background-color: yellow;
+}
+
+
+
+
+.card .front, .card:hover .back{
+   
+    width: 100%;
+    transition:  ease-in-out;
+}
+
+
+.card:hover  .front, .card .back{
+    width: 0px;
+}

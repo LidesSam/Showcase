@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Santiago Arrieta</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <link rel="stylesheet" href="mainStyle.css">
+
+    <script type="text/javascript" src="src/javascript/untils.js"></script>
+    <script type="text/javascript" src="src/GameRoom/GrGame.js"></script>
+    <script type="text/javascript" src="src/GameRoom/GrSprite.js"></script>
+
+</head>
+
+<body onload="">
+    <header>
+        <div class="picture">
+            <img src="src/img/my.jpg" />
+            <div class="tooltiptext">
+                <p>
+                    Santiago Ariel Arrieta<br>
+                    Age: <label id="age"></label><br>
+                    Title: Analista en computation administrativa
+                </p>
+            </div>
+        </div>
+        <div class="vcontainer">
+            <h3>
+                Santiago Arrieta
+
+            </h3>
+            <div class="sticklabel"> Curretly in active job seach </div>
+            <a href="https://drive.google.com/file/d/1h4Cpli_VmOnVWWKFBBERQOIrjOLv1oF_/view?usp=sharing"
+                target="_black">
+                <div class="sticklabel"> My Curriculun</div>
+            </a>
+        </div>
+
+
+        <div class="box">
+            <img src="src/img/pcicon.svg" />
+        </div>
+
+    </header>
+
+    <div class="Navbar">
+        <a href="Main.html">
+            Home
+         </a>
+
+        <a href="https://www.fiverr.com/share/1qR31z" target="_blank">
+            Services
+        </a>
+        <a href="Main.html#showcase">
+            Showcase
+        </a>
+
+        <a href="Main.html#projects">
+            Project
+        </a>
+
+        <div class="dropdown">
+            Gallery
+            <div class="dropdown-content">
+
+                <a href="https://www.shutterstock.com/g/santiago+ariel+arrieta" target="_blank">
+                    Shutterstock
+                </a>
+
+
+                <a href="https://www.piskelapp.com/user/6650236562833408" target="_blank">
+                    Pixelart
+                </a>
+
+
+            </div>
+        </div>
+
+
+        <a href="https://www.shutterstock.com/g/santiago+ariel+arrieta" target="_blank">
+            Games
+        </a>
+
+
+
+    </div>
+    </h3>
+    <fullcontent>
+        <sideline></sideline>
+        <centerContent>
+        <canvas id="PongBox"></canvas>
+       
+        </centerContent>
+        <sideline></sideline>
+    </fullcontent>
+</body>
+
+<script>
+    
+    var pong = document.getElementById("PongBox");
+    pong.style.minWidth = "200px";
+
+    pong.style.minHeight = "200px";
+    pong.style.backgroundColor = "WHITE";
+    var g = new GrGame();
+    g.ini();
+</script>
+
+</html>

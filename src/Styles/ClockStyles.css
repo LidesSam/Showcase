@@ -1,0 +1,263 @@
+
+:root {
+    
+  --AtomicGSec:linear-gradient(0.5turn,green,#99dd00,transparent,transparent);
+  --AtomicGMin:linear-gradient(0.5turn,green,#99dd00,transparent,transparent);
+  --AtomicGHr:linear-gradient(0.5turn,green,#99dd00,transparent,transparent);
+  --AtomicGDot:radial-gradient(green,#99dd00,transparent,transparent);
+  --AtomicGOut:radial-gradient(transparent,#99dd00,transparent,transparent);
+
+  --SeaBSec:linear-gradient(0.5turn,blue,#0055dd,transparent,transparent);
+  --SeaBMin:linear-gradient(0.5turn,blue,#0055dd,transparent,transparent);
+  --SeaBHr:linear-gradient(0.5turn,blue,#0055dd,transparent,transparent);
+  --SeaBDot:radial-gradient(#0055dd,blue);
+
+  --FlameBSec:linear-gradient(0.5turn,blue,#0055dd,cyan,transparent);
+  --FlameBMin:linear-gradient(0.5turn,blue,#0055dd,cyan,transparent);
+  --FlameBHr:linear-gradient(0.5turn,blue,#0055dd,cyan,transparent);
+  --FlameBDot:radial-gradient(cyan,#0055dd,blue);
+
+  
+  --FlameRSec:linear-gradient(0.25turn,green,#99dd00,#ffff00,transparent);
+  --FlameRMin:linear-gradient(0.25turn,green,#99dd00,#ffff00,transparent);
+  --FlameRHr:linear-gradient(0.25turn,green,#99dd00,#ffff00,transparent);
+  --FlameRDot:radial-gradient(0.25turn,#220022,#330033,#220022,#113311,#113311,#005500,green);
+
+
+  --PoisonMSec:linear-gradient(0.25turn,#5500ff,#ff00ff,transparent);
+  --PoisonMMin:linear-gradient(0.25turn,#5500ff,#ff00ff,transparent);
+  --PoisonMHr:linear-gradient(0.25turn,#5500ff,#ff00ff,transparent);
+  --PoisonMDot:radial-gradient(#5500ff,#ff00ff,transparent);
+
+  
+  --ElectricYSec:linear-gradient(0.5turn,#99dd00,#ffff00,transparent,transparent);
+  --ElectricYMin:linear-gradient(0.5turn,#99dd00,#ffff00,transparent,transparent);
+  --ElectricYHr:linear-gradient(0.5turn,#99dd00,#ffff00,transparent,transparent);
+  --ElectricYDot:radial-gradient(cyan,yellow,orangered);
+
+
+  --CristalCSec:linear-gradient(0.5turn,green,#99dd00,#ffff00,transparent);
+  --CristalCMin:linear-gradient(0.5turn,green,#99dd00,#ffff00,transparent);
+  --CristalCHr:linear-gradient(0.5turn,green,#99dd00,#ffff00,transparent);
+  --CristalCDot:radial-gradient(0.5turn,#220022,#330033,#220022,#113311,#113311,#005500,green);
+
+  --LemonSec:linear-gradient(0.5turn,green,#99dd00,#ffff00,transparent);
+  --LemonMin:linear-gradient(0.5turn,green,#99dd00,#ffff00,transparent);
+  --LemonHr:linear-gradient(0.5turn,green,#99dd00,#ffff00,transparent);
+  --lemonDot:radial-gradient(green,#99dd00,#ffff00,transparent,transparent);
+
+
+}
+.digital{
+    color: cyan;
+}
+   
+.clockBox{
+    max-width: 50%;
+
+    width: 50%;
+    background-color: black;
+    color: white;
+   align-items: center;
+    text-align: center;
+    min-height: 100%;
+}
+.clockContainer{
+
+    
+    text-align: center;
+    width: 100%;
+    color:white;
+    height: max-content;
+    
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    float: center;
+    flex-wrap: wrap;
+    align-content: center;
+  
+    
+    box-sizing: border-box;
+
+    
+    
+   
+}
+.controlbox{
+    align-items: center;
+    min-width: 100%;
+    min-height: 20px;
+
+    display: flex;
+    flex-direction: column-reverse;
+    justify-items: center;
+    
+}
+   
+
+.analog,.digital,.rotbox{
+ 
+    text-align:  center;
+    min-width: 20vw;
+    min-height: 20vw;
+    
+    
+   /* border: 2px solid teal;*/
+}
+
+
+
+.analog::before, .digital::before ,.rotbox::before{
+    content:'';
+    float:left;
+    padding-top:100%;
+}
+
+
+.analog,.digital{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    float:center;
+    border-radius: 50%;
+    margin: 10%;
+    min-width: 100%;
+    min-height: 100%;
+    
+    background-color:black ;
+    box-sizing: border-box;
+    border: blue 2px solid;
+    font-size:3vh;
+    
+     
+}
+
+.digit{
+  
+    position:absolute;
+    top: 40%;
+    
+    width: 100%;
+    text-align: center;
+    color:  inherit;
+    background-color:transparent;
+    
+}
+
+.clockContainer button{
+   background-color:transparent;
+   color: inherit;
+}
+
+.clockContainer button:hover{
+
+    
+ }
+
+
+
+
+
+
+ .point{
+    position: absolute;
+    background: radial-gradient(blue,darkblue,transparent);
+    
+    width: 10%;
+
+    height:  10%;
+    border-radius: 50%;
+    z-index: 10000;
+    bottom: 45%;
+    left: 45%;
+}
+
+.sec{
+    position: absolute;
+    background:linear-gradient(0.5turn,red,transparent,transparent);
+    width: 2%;
+
+    height:  40%;
+    border-radius: 25%;
+    z-index: 10000;
+    bottom: 50%;
+    left: 49%;
+
+}
+
+.min{
+    position: absolute;
+   background: linear-gradient(0.5turn,#0099ff,transparent,transparent);
+    width: 4%;
+
+    height:  40%;
+    border-radius: 25%;
+    z-index: 10000;
+    bottom: 50%;
+    left: 48%;
+    display: flex;
+}
+
+.hr{
+    position: absolute;
+    background: linear-gradient(0.5turn,#1150ff,#1150ff,black);
+    width: 8%;
+
+    height:  20%;
+    border-radius: 50% 50% 10% 10%;
+    z-index: 10000;
+    bottom: 50%;
+    left: 46%;
+}
+
+
+.rotbox{
+    
+    position: absolute;
+   /** background-color: rgba(255, 255, 255, 0.329);*/
+
+  min-width: 100%;
+  min-height: 100%;
+  
+  box-sizing: border-box;
+  top: 0%;
+  left: 0%;
+  z-index: 10000;
+  border-radius: 50%;
+  display:flex;
+  
+    
+}
+
+.camerabtn{
+    
+    border-radius: 100%;
+    width: 5vw;
+    height: 5vw;
+    -moz-user-select: none;
+}
+
+.camerabtn:hover{
+    background: radial-gradient(white,transparent,transparent);
+    
+    border-radius: 100%;
+    width: 5vw;
+    height: 5vw;
+    outline-color: transparent;
+    -moz-user-select: none;
+    
+}
+
+.camerabtn:active{
+    background: radial-gradient(transparent,black,black);
+    outline-color: transparent;
+    -moz-user-select: none;
+
+}
+
+.camerabtn:focus, input:focus{
+    outline: none;
+ 
+}
+
