@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Santiago Arrieta</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <link rel="stylesheet" href="mainStyle.css">
+    <script type="text/javascript" src="src/javascript/untils.js"></script>
+    <script type="text/javascript" src="src/javascript/ColorBox.js"></script>
+    <script type="text/javascript" src="src/javascript/Clock.js"></script>
+
+</head>
+
+<body onload="">
+    <header>
+    <div clas="nage-picture-frame "> <img src="src/img/Me.jpg " class="nage_picture ">
+    </div>
+
+    <!--v separator-->
+    <div class="linevseparator ">
+
+    </div>
+
+    <div style="text-align: center;">
+        <h3>Santiago Arrieta</h3>
+        <hr> Edad: <label id="age">calculating age </label>
+        <br> Analista en computation administrativa
+        <br> Tecnico en diseño y programacion de videojuegos
+        <hr>
+        <div class="btnBox">
+            <a href=" https://drive.google.com/file/d/1h4Cpli_VmOnVWWKFBBERQOIrjOLv1oF_/view " class="RoundBtnLink " target="blanck ">
+                CV
+            </a>
+        </div>
+
+    </div>
+    <div class="linevseparator "></div>
+    <!--v separator-->
+    <!--v Social media icons-->
+    <div class="vcontainer ">
+
+
+        <div class="smicon-container-row-R ">
+            
+            <!--linkedin -->
+            <a class="smicon " href="https://www.linkedin.com/in/santiago-arrieta/" target="_blank ">
+                <img src="src/img/socialMediaBlack/Linkedin-icon-one.png " />
+            </a>
+            
+            <!--instragram-->
+            <a class="smicon " href="https://www.instagram.com/santiagoarielarrieta/ " target="_blank ">
+                <img src="src/img/socialMediaBlack/Instagram-icon-one.png " />
+            </a>
+            <!--facebook -->
+            <a class="smicon " href="https://www.facebook.com/santi.arrieta.71/ " target="_blank ">
+                <img src="src/img/socialMediaBlack/facbook-icon-one.png " />
+            </a>
+
+        </div>
+
+    </div>
+            <!--removed right picture-->
+            <!--div class="box ">
+                    <img src="src/img/pcicon.svg " />
+            </div-->
+        
+
+    </header>
+    <nav>
+        
+    </nav>
+
+    <main>
+        <div class="stack-display ">
+            <h3>
+                Clock
+            </h3>
+            <div id="clock" >
+              
+                
+            </div>
+        </div>
+      
+
+    </main>
+
+<footer></footer>
+</body>
+
+<script>
+    createClock(1, "Random ");
+
+    
+     
+    var date = new Date();
+    date.setFullYear(1995, 12, 25);
+    calculateAge(date);
+    
+</script>
+
+</html>
