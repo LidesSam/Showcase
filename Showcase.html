@@ -14,24 +14,24 @@
 
 </head>
 
-<body onLoad="StartLoader()" style="height:100vh;">
+<body onload="StartLoader()" style="height:100vh;">
 
     <div id="loader" style="display:flex;justify-content: center;">
         <div class="absCenter">
             Cargando
         </div>
         <div class="absCenter">
-          
-            <div class="loader ">
+
+            <div class="loader " style="border-top-color: teal;">
 
 
             </div>
         </div>
-     
+
     </div>
 
-    <header id="header" style="display:none">
 
+    <header id= header style="display:none">
         <div clas="nage-picture-frame "> <img src="src/img/Me.jpg " class="nage_picture ">
         </div>
 
@@ -54,25 +54,26 @@
             </div>
 
         </div>
+    
         <div class="linevseparator "></div>
         <!--v separator-->
         <!--v Social media icons-->
         <div class="vcontainer ">
 
 
-            <div class="blockIcon-container-row-R ">
+            <div class="smicon-container-row-R ">
 
                 <!--linkedin -->
-                <a class="blockIcon " href="https://www.linkedin.com/in/santiago-arrieta/" target="_blank ">
+                <a class="smicon " href="https://www.linkedin.com/in/santiago-arrieta/" target="_blank ">
                     <img src="src/img/socialMediaBlack/Linkedin-icon-one.png " />
                 </a>
 
                 <!--instragram-->
-                <a class="blockIcon " href="https://www.instagram.com/santiagoarielarrieta/ " target="_blank ">
+                <a class="smicon " href="https://www.instagram.com/santiagoarielarrieta/ " target="_blank ">
                     <img src="src/img/socialMediaBlack/Instagram-icon-one.png " />
                 </a>
                 <!--facebook -->
-                <a class="blockIcon " href="https://www.facebook.com/santi.arrieta.71/ " target="_blank ">
+                <a class="smicon " href="https://www.facebook.com/santi.arrieta.71/ " target="_blank ">
                     <img src="src/img/socialMediaBlack/facbook-icon-one.png " />
                 </a>
 
@@ -81,48 +82,28 @@
         </div>
         <!--removed right picture-->
         <!--div class="box ">
-                <img src="src/img/pcicon.svg " />
-        </div-->
+                    <img src="src/img/pcicon.svg " />
+            </div-->
+
+
     </header>
 
+      
+    <main id = "main" style="display:none;">
+    
 
-    <main id="main" style="display:none">
-        <div class="stack-display ">
-            <h3>
-                Game
+        <!-- Clock -->
+        <div class="gitbox">
+            <h3 class="fullRow">Relog|javascript</h3>
+            <h3 class="fullRow">
+
+                <div id="clock">
+
+
+                </div>
             </h3>
-
-            <div class="stackbox " style=" border-color: blanchedalmond; ">
-                <div class="basicadds" style="background-color:#fa5c5c ">
-                    <!--Itch.io -->
-                    <a href="https://lides.itch.io" target="blank ">
-                        <img src="src\img\Banners\ItchLogo.svg ">
-                    </a>
-                </div>
-                <div class="basicadds " style="background-color:black ">
-
-                    <a href="https://twitter.com/crazy_inocent" target="blank ">
-                        <img src="src\img\Banners\cigBlackBanner.svg">
-                        </img>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="stack-display ">
-            <h3>
-                Programation
-            </h3>
-            <div class="stackbox " style=" border-color: black; ">
-                <div class="basicadds " style="background-color:orange ">
-                    <!--Showcase -->
-                    <a href="Showcase.html ">
-                        <img src="src\img\Banners\ShowcaseBlackLogo.svg ">
-                    </a>
-                </div>
-
-                <div class="basicadds " style="background-color: blueviolet; ">
+            <div class="fullRow">
+                <div class="basicadds " style="background-color: white; ">
 
                     <a href="https://github.com/LidesSam " target=" _blank ">
 
@@ -134,31 +115,39 @@
             </div>
         </div>
 
-        <div class="stack-display ">
-            <h3>
-                Art
+
+        <!-- Todo List -->
+        <div class="gitbox">
+            <h3 class="fullRow">TodoList|React.Js</h3>
+            <h3 class="fullRow">
+                Lista De cosas por hacer desarollada con React y firebase
             </h3>
-            <div class="stackbox " style=" border-color: blanchedalmond; ">
-                <div class="basicadds " style="background-color:limegreen; ">
-                    <a href="https://www.fiverr.com/santiagolds" target="_blank">
-                        <img src="src\img\Banners\ServiceBlackBanner.svg">
+            <div class="fullRow" style="border-color:var(--Oxford-Blue)">
+                <div class="basicadds " style="background-color: white; ">
+
+                    <a href="https://github.com/LidesSam " target=" _blank ">
+
+                        <img src=" src\img\Banners\GitHub-Mark-Black-Big.svg " target="_blank ">
+
                     </a>
                 </div>
-                <div class="basicadds " style="background-color:red; ">
-                    <a href="https://www.shutterstock.com/es/g/Santiago+Ariel+Arrieta" target="_blank">
-                        <img src="src\img\Banners\istockBlackBanner.svg">
-                    </a>
-                </div>
-                <!--pixelart -->
-                <div class="basicadds " style="background-color:black ; ">
-                    <a href="https://www.piskelapp.com/user/6650236562833408" target="_blank " class="imageContainer">
-                        <img src="src\img\Banners\pixelArtLogo.svg ">
-                    </a>
+                <div class="basicadds " style="background-color: orange ">
+                    <div class="fullColumn">
+                   <b> Probar
+                </b>
+                    
+                    <a href="https://github.com/LidesSam " target=" _blank " class="controlbox">
+                        <button class="camerabtn">
+                            
+                        </button >
+                    </a></div>
                 </div>
             </div>
         </div>
 
+
     </main>
+    <a class="backBtn" href="Main.html" >volver</a>
 
     <footer id="footer" style="display: none; padding: 10px;">
         <div>
@@ -168,11 +157,12 @@
             <span>Tel: +54 9 3462 549255</span> 
         </div>
     </footer>
-
-
 </body>
 
 <script>
+    createClock(1, "Random ");
+
+
 
     var date = new Date();
     date.setFullYear(1995, 12, 25);
@@ -182,9 +172,9 @@
 
     //loader function
     var myVar;
-    document.addEventListener('DOMContentLoaded',()=>showPage(), false);
+    document.addEventListener('DOMContentLoaded', ()=> showPage(), false);
     function StartLoader() {
-        myVar = setTimeout(showPage(), 20000);
+        //myVar = setTimeout(showPage, 2000);
        
         //previously called in the on load replaced for this function itself
         fillAll();
@@ -193,7 +183,6 @@
 
 
     function showPage() {
-   
         document.getElementById("loader").style.display = "none";
         document.getElementById("main").style.display = "flex";
         document.getElementById("header").style.display = "flex";
@@ -202,6 +191,8 @@
 
     }
 
+
 </script>
+    
 
 </html>

@@ -1,151 +1,125 @@
 @import "./src/Styles/3Deffect.css";
 @import "./src/Styles/ClockStyles.css";
-@import "./C:\Users\santi\Desktop\Webs\SantiagoArrietaShowcase\BlueNight.css";
+@import "./BlueNight.css";
+@import "./src/Styles/NewAge2021.css";
+
+/*main style import newer styles for terms of prcticity*/
 
 :root {
-    --main-color:#06c;
-  --backcolor:#282222;
-  --Redbackcolor:#1a0000;
-  --lightbackcolor:#3f3333;
-  --darkbackcolor:#141111;
-  --soberGradient:linear-gradient(0.25turn,#282c34,#282c34,#9bdac854,#4a5856);
-  --electricGradient:linear-gradient(0.25turn,#282c34,#282c34,#9bdac854,#4a5856);
-  --magmaGradient:linear-gradient(0.25turn,black,#700000,orangered,#700000);
-  --magmaGradientDark:linear-gradient(0.25turn,black,#280000,#700000,#280000);
-  --poisonGradient:linear-gradient(0.25turn,#220022,#330033,#220022,#113311,#113311,#005500,green);
- 
+    --main-color: #06c;
+    --backcolor: #282222;
+    --Redbackcolor: #1a0000;
+    --lightbackcolor: #3f3333;
+    --darkbackcolor: #141111;
+    --soberGradient: linear-gradient(0.25turn, #282c34, #282c34, #9bdac854, #4a5856);
+    --electricGradient: linear-gradient(0.25turn, #282c34, #282c34, #9bdac854, #4a5856);
+    --magmaGradient: linear-gradient(0.25turn, black, #700000, orangered, #700000);
+    --magmaGradientDark: linear-gradient(0.25turn, black, #280000, #700000, #280000);
+    --poisonGradient: linear-gradient(0.25turn, #220022, #330033, #220022, #113311, #113311, #005500, green);
 }
 
-
-
-body{
-
-  max-width: 100vw;
-  min-height: 100vh;
-   padding: 0px;
-   margin: 0px;
-   background-color: var(--backcolor);
-   display: flex;
-   flex-direction: column;
-   justify-items: center;
-  
-}
-fullcontent{
-  display: flex;
-  flex-direction: row;
-  justify-items: center;
-  /*background-color: black;*/
-  min-height: 20vh;
-}
-sideline{
-    /*background-color: red;*/
-  min-width: 10vw;
-  min-height: 100%;
-}
-centerContent{
-  background-color: var(--Redbackcolor);
-  min-height: 100%;
-width: 100%;
-}
-.Navbar{
- 
-    width: 100%;
-    min-height: 5vw;
+body {
+    max-width: 100vw;
+    min-height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--backcolor);
     display: flex;
-   flex-direction: row;
-    background: var(--magmaGradientDark);
-    align-items: center;
-    justify-content: space-between;
-    float: center;
-    color: bisque;
-    margin: 0;
-    border: 0;
-    padding: 0pt;
+    flex-direction: column;
+    justify-items: center;
+    justify-content:space-between;
+}
 
-  }
+.fullcontent {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    /*background-color: black;*/
+    min-height: 20vh;
+}
 
-  .Navbar a ,.Navbar .dropdown{
-    text-align: center;
+.fullRowContainer{
+    display: flex;
+    max-width: 100%;
+}
+
+.fullColumCotainerContainer{
+    display: flex;
+    max-height: 100%;
+}
+
+.sideline {
+    /*background-color: red;*/
+    min-width: 10vw;
+    min-height: 100%;
+}
+
+.centerContent {
+    background-color: var(--Redbackcolor);
+    min-height: 100%;
     width: 100%;
-    margin: 1vh;
-    color:gray;
-    font-weight:  bold;
-    background: var(--backcolor);
-    border: var(--lightbackcolor) solid ;
-    min-height:70%;
-    outline: 0vw;
-    text-size-adjust: 80%;
-    text-orientation: sideways;
-  
-  }
-  
-.sticklabel{
-  border: orangered solid 5px;
-  border-radius: 5px;
-  color: var(--main-color);
-  background: orange;
-  text-align: center;
-  
-}
-a .sticklabel:hover {
-  border: gray solid 5px;
-  border-radius: 5px;
-  color: red;
- 
-  background: lightblue;
-  text-align: center;
-  
 }
 
-.Navbar a:hover{
-    color:orangered;
+
+.sticklabel {
+    border: orangered solid 5px;
+    border-radius: 5px;
+    color: var(--main-color);
+    background: orange;
+    text-align: center;
+}
+
+a .sticklabel:hover {
+    border: gray solid 5px;
+    border-radius: 5px;
+    color: red;
+    background: lightblue;
+    text-align: center;
+}
+
+.Navbar a:hover {
+    color: orangered;
     background: var(--lightbackcolor);
-  
-    outline:red solid 4px;
+    outline: red solid 4px;
     height: 100%;
     min-width: 20vw;
-   
+}
 
-  }
-
-  
-  .Navbar h3{
+.Navbar h3 {
     margin: 2px;
     height: 100%;
     display: flex;
     background: #282c34;
-  }
-  .Navbar h3:hover{
+}
+
+.Navbar h3:hover {
     color: #09d3ac;
     background: #282222;
-  }
+}
 
-  .dropdown {
+.dropdown {
     position: relative;
     display: inline-block;
-  }
-  
-  .dropdown:hover {
-    color:orangered;
+}
+
+.dropdown:hover {
+    color: orangered;
     background: var(--lightbackcolor);
-    border:orangered solid 4px;
+    border: orangered solid 4px;
     display: block;
-   
-  }
-  .dropdown-content {
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
     min-width: 100%;
-    margin-top:1px;
+    margin-top: 1px;
     margin-left: -4px;
     border: inherit;
-    
     z-index: 1;
-    
+}
 
-  }
-  
-  .dropdown-content a {
+.dropdown-content a {
     color: orange;
     background-color: var(--backcolor);
     border: 0px;
@@ -156,261 +130,249 @@ a .sticklabel:hover {
     min-width: 80%;
     min-height: 5vh;
     padding-top: 1.5vh;
-    
-  }
-  .dropdown-content a:hover {
-    
+}
+
+.dropdown-content a:hover {
     justify-items: center;
     background-color: var(--darkbackcolor);
     outline: 0px;
     margin: 0px;
     width: 100%;
     color: wheat;
-    
-  }
-  
-  .dropdown:hover .dropdown-content {
+}
+
+.dropdown:hover .dropdown-content {
     display: flex;
     flex-direction: column;
-  }
-  header{
+}
 
-    display: flex;
-    flex-direction: row;
 
-    align-items: center;
-    justify-content: space-evenly;
-    justify-items: center;
-    min-height: 20vh;
-    background: var(--darkbackcolor);
-    max-width: 100vw;
-      
-  }
 
-  header h3{
+header h3 {
     color: white;
-  }
-  header.box , header.picture{
-      max-height: 18vh;
-      margin: 10px;
-  }
+}
 
-header .box img, header .picture img{
+header.box,
+header.picture {
     max-height: 18vh;
-    
+    margin: 10px;
 }
 
-header .picture img{
-  border:black solid 1vw;
-  max-height: 20vh-2px;
-  border-radius: 50% ;
-  box-sizing: border-box;
+header .box img,
+header .picture img {
+    max-height: 18vh;
+}
 
+header .picture img {
+    border: black solid 1vw;
+    max-height: 20vh-2px;
+    border-radius: 50%;
+    box-sizing: border-box;
 }
-header .picture img:hover{
-  border: orangered solid 2px;
+
+header .picture img:hover {
+    border: orangered solid 2px;
 }
+
+
 /* width */
+
 ::-webkit-scrollbar {
-  width: 10px;
+    width: 10px;
 }
+
 
 /* Track */
+
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+    background: #f1f1f1;
 }
+
 
 /* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
 
-  
+::-webkit-scrollbar-thumb {
+    background: #888;
 }
 
+
 /* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+    background: #555;
 }
 
 
 /*Body article*/
 
-article{
-background-color: blanchedalmond;
-min-height: 100%;
+article {
+    background-color: blanchedalmond;
+    min-height: 100%;
 }
 
-
-
-.fwcontainer{
-  
- 
-
-  color: white;
-
-  box-sizing: border-box;
-
-
-  align-items: space-evenly;
-  column-gap: normal;
-
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-template-rows: auto;
-  width: inherit;
-  height: fit-content;
-  
-  justify-content: space-evenly;
-  gap: 1vw;
-
+.fwcontainer {
+    color: white;
+    box-sizing: border-box;
+    align-items: space-evenly;
+    column-gap: normal;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: auto;
+    width: inherit;
+    height: fit-content;
+    justify-content: space-evenly;
+    gap: 1vw;
 }
 
-.fwcontainer .box,.colum12,.row12,.box2x2,.fwcontainer iframe{
-  margin: auto;
-  
-
-  width: 100%;
-  height: 100%;
-  min-height: 20vh;
-  min-height: 20vh;
-  text-align: center;
-  color: white;
-  
-  box-sizing: border-box;
-  
-  border: #202028 solid 0.5vw;
-
-  margin: 2px;
-  
-  color: white;
- 
-  background-color: var(--lightbackcolor);
-  position: relative;
-  vertical-align: center;
-
- 
-
+.fwcontainer .box,
+.colum12,
+.row12,
+.box2x2,
+.fwcontainer iframe {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    min-height: 20vh;
+    min-height: 20vh;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+    border: #202028 solid 0.5vw;
+    margin: 2px;
+    color: white;
+    background-color: var(--lightbackcolor);
+    position: relative;
+    vertical-align: center;
 }
-.middle{
 
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+.middle {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
-a{
-  text-decoration: none;
-}
-.fwcontainer img{
-  max-width: 90%;
-  max-height: 100%;
-  min-height: 10vh;
-  border: transparent solid 0.5vw;
-  box-sizing: border-box;
-}
-.fwcontainer img:hover{
-border: orangered solid 0vw;
 
+a {
+    text-decoration: none;
+}
+
+.fwcontainer img {
+    max-width: 90%;
+    max-height: 100%;
+    min-height: 10vh;
+    border: transparent solid 0.5vw;
+    box-sizing: border-box;
+}
+
+.fwcontainer img:hover {
+    border: orangered solid 0vw;
 }
 
 .colum12 {
-    
-  grid-column: 1 / 3;
+    grid-column: 1 / 3;
 }
 
 .row12 {
-    
-  grid-row: 1 / 3;
+    grid-row: 1 / 3;
 }
 
 .box2x2 {
-  grid-column: 1 / 3;
-  grid-row: 1 / 3;
-
-   
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
 }
-
 
 .vcontainer {
- 
-  display: flex;
-  flex-direction: column;
-  vertical-align: middle;
-  height: max-content;
-  min-height: 100%;
-  width: max-content;
-  min-width: 50%;
- }
- .vcontainer .sticklabel{
-   width: calc(100%-10px);
-   margin: 5px;
- }
+    display: flex;
+    flex-direction: column-reverse;
+    vertical-align: middle;
+    height: max-content;
+    min-height: inherit;
+    width: max-content;
 
- .vcontainer h3{
- text-align: center;
+    min-width: 50%;
 }
 
-.MainTitle{
-  color:orangered;
-  text-align: center;
-  justify-items: center;
-  max-width: 100vw;
-  min-height: 5vh;
- 
+.vcontainer .sticklabel {
+    width: calc(100%-10px);
+    margin: 5px;
 }
 
-body hr{
-  color: orangered;
-  max-width: 98vw;
-  background-color: var(--magmaGradientDark);
-  
+.vcontainer h3 {
+    text-align: center;
+}
+
+.MainTitle {
+    color: orangered;
+    text-align: center;
+    justify-items: center;
+    max-width: 100vw;
+    min-height: 5vh;
+}
+
+body hr {
+    color: orangered;
+    max-width: 98vw;
+    background-color: var(--magmaGradientDark);
 }
 
 .tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
 }
 
-.picture .tooltiptext,.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
+.picture .tooltiptext,
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
 }
 
-.picture:hover .tooltiptext,.tooltip:hover .tooltiptext {
-  visibility: visible;
-  background-color: #282c34;
+.picture:hover .tooltiptext,
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    background-color: #282c34;
 }
 
-
-.chatbox{
-  min-height: 10vh;
-  width: 100vw;
-  background-color: yellowgreen;
-  position:absolute;
-  bottom: 0;
-  align-items: center;
-  justify-content: center;
+.chatbox {
+    min-height: 10vh;
+    width: 100vw;
+    background-color: yellowgreen;
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
 }
 
-.chatbox input{
-  min-height: 10vh;
-  width:84%;
-  margin: 2%;
- 
+.chatbox input {
+    min-height: 10vh;
+    width: 84%;
+    margin: 2%;
 }
-.chatbox button{
-  width: 7%;
-  height: 10vh;
-  margin: 1%;
+
+.chatbox button {
+    width: 7%;
+    height: 10vh;
+    margin: 1%;
 }
+
+.skill-display{
+    box-sizing: border-box;
+    border: solid black 1px;
+    overflow: scroll;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.fullRowContainer{
+    min-width: 100%;
+}
+

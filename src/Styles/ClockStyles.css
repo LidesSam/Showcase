@@ -67,6 +67,7 @@
     
     text-align: center;
     width: 100%;
+    min-width: 128px;
     color:white;
     height: max-content;
     
@@ -137,7 +138,7 @@
   
     position:absolute;
     top: 40%;
-    
+    font-size: 1rem;
     width: 100%;
     text-align: center;
     color:  inherit;
@@ -233,8 +234,11 @@
 .camerabtn{
     
     border-radius: 100%;
-    width: 5vw;
-    height: 5vw;
+    min-width: 2vw;
+    min-height: 2vw;
+    
+    width: 10%;
+    height: 10%;
     -moz-user-select: none;
 }
 
