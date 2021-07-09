@@ -182,13 +182,14 @@
 
     //loader function
     var myVar;
-    document.addEventListener('DOMContentLoaded',()=>showPage(), false);
+    // document.addEventListener('DOMContentLoaded', () => showPage(), false);// need more reseach
     function StartLoader() {
-        myVar = setTimeout(showPage(), 20000);
-       
+        myVar = setTimeout(showPage, 2000);
+
         //previously called in the on load replaced for this function itself
         fillAll();
     }
+
 
 
 

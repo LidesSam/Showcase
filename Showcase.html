@@ -31,7 +31,7 @@
     </div>
 
 
-    <header id= header style="display:none">
+    <header id=header style="display:none">
         <div clas="nage-picture-frame "> <img src="src/img/Me.jpg " class="nage_picture ">
         </div>
 
@@ -54,7 +54,7 @@
             </div>
 
         </div>
-    
+
         <div class="linevseparator "></div>
         <!--v separator-->
         <!--v Social media icons-->
@@ -88,9 +88,9 @@
 
     </header>
 
-      
-    <main id = "main" style="display:none;">
-    
+
+    <main id="main" style="display:none;">
+
 
         <!-- Clock -->
         <div class="gitbox">
@@ -103,18 +103,53 @@
                 </div>
             </h3>
             <div class="fullRow">
-                <div class="basicadds " style="background-color: white; ">
+                <div>
 
-                    <a href="https://github.com/LidesSam " target=" _blank ">
+                    <a href="https://github.com/LidesSam/Showcase/" target=" _blank " class="basicadds " style="background-color: white; ">
 
                         <img src=" src\img\Banners\GitHub-Mark-Black-Big.svg " target="_blank ">
 
                     </a>
-                </div>
 
+                </div>
+                </div>
+            </div>
+
+            <!-- pixelbox -->
+            <div class="gitbox">
+                <h2 class="fullRow">PixelBox(en progreso)</h2>
+
+                <h3 class="fullRow" style="max-height: fit-content;">
+
+                    Aplicacion web<br />
+                    editor pixelart<br />
+                    javascript
+                </h3>
+                <div class="fullRow" style="border-color:var(--Oxford-Blue)">
+                    <div class="basicadds " style="background-color: white;">
+
+                        <a href="https://lidessam.github.io/PixelBox/" target="_blank"
+                            style="display: flex; flex-direction: row; justify-content: center;">
+
+                            <img style="object-fit: contain;" src="src\img\addIcons\pixelBox.png ">
+
+
+                        </a>
+                    </div>
+                </div>
+                <div class="fullRow" style="border-color:var(--Oxford-Blue)">
+
+
+                    <a href="https://github.com/LidesSam/pixelBox " target=" _blank " class="basicadds "
+                        style="background-color: white; ">
+
+                        <img src=" src\img\Banners\GitHub-Mark-Black-Big.svg " target="_blank ">
+
+                    </a>
+
+                </div>
             </div>
         </div>
-
 
         <!-- Todo List -->
         <div class="gitbox">
@@ -125,7 +160,7 @@
             <div class="fullRow" style="border-color:var(--Oxford-Blue)">
                 <div class="basicadds " style="background-color: white; ">
 
-                    <a href="https://github.com/LidesSam " target=" _blank ">
+                    <a href="https://github.com/LidesSam/React-TDLIst" target=" _blank ">
 
                         <img src=" src\img\Banners\GitHub-Mark-Black-Big.svg " target="_blank ">
 
@@ -133,28 +168,29 @@
                 </div>
                 <div class="basicadds " style="background-color: orange ">
                     <div class="fullColumn">
-                   <b> Probar
-                </b>
-                    
-                    <a href="https://github.com/LidesSam " target=" _blank " class="controlbox">
-                        <button class="camerabtn">
-                            
-                        </button >
-                    </a></div>
+                        <b> Probar
+                        </b>
+
+                        <a href="https://react-todo-list-ldssaa.herokuapp.com/" target="_blank " class="controlbox">
+                            <button class="camerabtn">
+
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
 
 
     </main>
-    <a class="backBtn" href="Main.html" >volver</a>
+    <a class="backBtn" href="Main.html">volver</a>
 
     <footer id="footer" style="display: none; padding: 10px;">
         <div>
             contacto
             <hr>
             <span>Email:lides.sam@gmail.com</span><br>
-            <span>Tel: +54 9 3462 549255</span> 
+            <span>Tel: +54 9 3462 549255</span>
         </div>
     </footer>
 </body>
@@ -172,10 +208,10 @@
 
     //loader function
     var myVar;
-    document.addEventListener('DOMContentLoaded', ()=> showPage(), false);
+   // document.addEventListener('DOMContentLoaded', () => showPage(), false);
     function StartLoader() {
-        //myVar = setTimeout(showPage, 2000);
-       
+        myVar = setTimeout(showPage, 2000);
+
         //previously called in the on load replaced for this function itself
         fillAll();
     }
@@ -187,12 +223,12 @@
         document.getElementById("main").style.display = "flex";
         document.getElementById("header").style.display = "flex";
         document.getElementById("footer").style.display = "flex";
-       
+
 
     }
 
 
 </script>
-    
+
 
 </html>
